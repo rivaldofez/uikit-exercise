@@ -49,7 +49,15 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "moveToDetail", sender: nil)
+        performSegue(withIdentifier: "moveToDetail", sender: dummyAcademyData[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToDetail"{
+            if let detailViewController = segue.destination as? DetailViewController {
+                detailViewController.academy = sender as? AcademyModel
+            }
+        }
     }
 }
 
