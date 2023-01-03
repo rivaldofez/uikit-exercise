@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="MyDicoding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyPicture" translatesAutoresizingMaskIntoConstraints="NO" id="4nl-6G-oIB">
+                                <rect key="frame" x="110" y="16" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9bn-lU-v1h"/>
+                                    <constraint firstAttribute="height" constant="100" id="i2y-Js-zNi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gilang Ramadhan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkP-cg-7Ha">
+                                <rect key="frame" x="70" y="124" width="180.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer di Dicoding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qR3-xy-fPU">
+                                <rect key="frame" x="86" y="158.5" width="148.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqB-EB-CF0">
+                                <rect key="frame" x="110" y="185" width="100" height="34.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Follow" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="DicodingColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="setFollowed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Lz-mA-8Bg"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="g9q-kX-F0Y">
+                                <rect key="frame" x="12" y="243.5" width="296" height="190"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eor-Zd-4L7">
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="60"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoAcademy" translatesAutoresizingMaskIntoConstraints="NO" id="NwN-lP-0EZ">
+                                                <rect key="frame" x="10" y="5" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="CwU-Hp-teJ"/>
+                                                    <constraint firstAttribute="height" constant="50" id="YGg-hI-zTI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belajar 28 Kelas Akademi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGG-Y7-vKu">
+                                                <rect key="frame" x="70" y="5" width="216" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="RedColor"/>
+                                        <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WbH-zo-Y8Q">
+                                        <rect key="frame" x="0.0" y="65" width="296" height="60"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoChallenge" translatesAutoresizingMaskIntoConstraints="NO" id="YSG-vU-xB3">
+                                                <rect key="frame" x="10" y="5" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="4sC-sj-33B"/>
+                                                    <constraint firstAttribute="height" constant="50" id="bNk-fI-bwk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memenangkan 2 Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heh-PG-QXc">
+                                                <rect key="frame" x="70" y="5" width="216" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BlueColor"/>
+                                        <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4fN-xT-O2F">
+                                        <rect key="frame" x="0.0" y="130" width="296" height="60"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoEvent" translatesAutoresizingMaskIntoConstraints="NO" id="mci-vt-2Oy">
+                                                <rect key="frame" x="10" y="5" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LZB-W8-2Mw"/>
+                                                    <constraint firstAttribute="width" constant="50" id="cWD-d4-xUQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menghadiri 8 Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVs-ia-oQW">
+                                                <rect key="frame" x="70" y="5" width="216" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="GreenColor"/>
+                                        <edgeInsets key="layoutMargins" top="5" left="10" bottom="5" right="10"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yqB-EB-CF0" firstAttribute="top" secondItem="qR3-xy-fPU" secondAttribute="bottom" constant="12" id="1iN-QA-7id"/>
+                            <constraint firstItem="g9q-kX-F0Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="9bZ-4u-v2F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g9q-kX-F0Y" secondAttribute="trailing" constant="12" id="LsA-si-A2r"/>
+                            <constraint firstItem="yqB-EB-CF0" firstAttribute="width" secondItem="4nl-6G-oIB" secondAttribute="width" id="MlY-rJ-GGi"/>
+                            <constraint firstItem="qR3-xy-fPU" firstAttribute="top" secondItem="EkP-cg-7Ha" secondAttribute="bottom" constant="8" symbolic="YES" id="NCF-yo-hLb"/>
+                            <constraint firstItem="g9q-kX-F0Y" firstAttribute="top" secondItem="yqB-EB-CF0" secondAttribute="bottom" constant="24" id="NKD-Gh-9vI"/>
+                            <constraint firstItem="4nl-6G-oIB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="TA3-Xt-kTE"/>
+                            <constraint firstItem="yqB-EB-CF0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UPt-MX-haj"/>
+                            <constraint firstItem="EkP-cg-7Ha" firstAttribute="top" secondItem="4nl-6G-oIB" secondAttribute="bottom" constant="8" symbolic="YES" id="cXh-bX-zrm"/>
+                            <constraint firstItem="4nl-6G-oIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ge2-Av-5P4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="g9q-kX-F0Y" secondAttribute="bottom" constant="12" id="ntz-1b-mvW"/>
+                            <constraint firstItem="EkP-cg-7Ha" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o5J-eO-N1E"/>
+                            <constraint firstItem="qR3-xy-fPU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yM9-nA-Z9J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="followedButton" destination="yqB-EB-CF0" id="Zls-xf-s2b"/>
+                        <outlet property="profileImageView" destination="4nl-6G-oIB" id="o3M-Gl-Dtn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoAcademy" width="170.5" height="170.5"/>
+        <image name="LogoChallenge" width="170.5" height="170.5"/>
+        <image name="LogoEvent" width="170.5" height="170.5"/>
+        <image name="MyPicture" width="442" height="442"/>
+        <namedColor name="BlueColor">
+            <color red="0.11800000071525574" green="0.56499999761581421" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DicodingColor">
+            <color red="0.15700000524520874" green="0.23100000619888306" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.18000000715255737" green="0.83499997854232788" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RedColor">
+            <color red="1" green="0.27799999713897705" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
