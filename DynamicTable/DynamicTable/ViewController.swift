@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         academyTableView.dataSource = self
+        academyTableView.delegate = self
         
         academyTableView.register(UINib(nibName: "AcademyTableViewCell", bundle: nil), forCellReuseIdentifier: "AcademyCell")
     }
@@ -26,6 +27,8 @@ extension ViewController: UITableViewDataSource {
         print(dummyAcademyData.count)
         return dummyAcademyData.count
     }
+    
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -40,11 +43,13 @@ extension ViewController: UITableViewDataSource {
         }else{
             return UITableViewCell()
         }
-        
-        
     }
-    
-    
-    
+
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveToDetail", sender: nil)
+    }
 }
 

@@ -9,6 +9,11 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var academyImage: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
