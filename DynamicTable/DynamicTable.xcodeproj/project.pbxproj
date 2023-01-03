@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E02155C29647B53004E9B1E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E02155B29647B53004E9B1E /* DetailViewController.swift */; };
 		7E5D53EA29643ED600AD7CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5D53E929643ED600AD7CB1 /* AppDelegate.swift */; };
 		7E5D53EC29643ED600AD7CB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5D53EB29643ED600AD7CB1 /* SceneDelegate.swift */; };
 		7E5D53EE29643ED600AD7CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5D53ED29643ED600AD7CB1 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E02155B29647B53004E9B1E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7E5D53E629643ED600AD7CB1 /* DynamicTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5D53E929643ED600AD7CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E5D53EB29643ED600AD7CB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				7E5D53F229643ED700AD7CB1 /* Assets.xcassets */,
 				7E5D53F429643ED700AD7CB1 /* LaunchScreen.storyboard */,
 				7E5D53F729643ED700AD7CB1 /* Info.plist */,
+				7E02155B29647B53004E9B1E /* DetailViewController.swift */,
 			);
 			path = DynamicTable;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				7E5D53EE29643ED600AD7CB1 /* ViewController.swift in Sources */,
 				7E5D53EA29643ED600AD7CB1 /* AppDelegate.swift in Sources */,
 				7E5D53FE29643F2900AD7CB1 /* AcademyModel.swift in Sources */,
+				7E02155C29647B53004E9B1E /* DetailViewController.swift in Sources */,
 				7E5D53EC29643ED600AD7CB1 /* SceneDelegate.swift in Sources */,
 				7E5D54012964400200AD7CB1 /* AcademyTableViewCell.swift in Sources */,
 			);
