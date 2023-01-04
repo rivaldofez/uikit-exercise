@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.setTitleColor(.white, for: .normal)
         button.setTitle("Button", for: .normal)
+        
         self.view.addSubview(button)
         
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -24,6 +25,15 @@ class ViewController: UIViewController {
         button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         button.widthAnchor.constraint(equalToConstant: 128).isActive = true
         button.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+        
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+    }
+    
+    
+    @objc func buttonAction(sender: UIButton!){
+        let viewController = UINavigationController(rootViewController: DetailViewController())
+        viewController.modalPresentationStyle = .fullScreen
+        present(viewController, animated: true,completion: nil)
     }
     
     
