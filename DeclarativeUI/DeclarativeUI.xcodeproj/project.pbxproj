@@ -13,6 +13,8 @@
 		7E02159529654DF8004E9B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E02159429654DF8004E9B1E /* Assets.xcassets */; };
 		7E02159829654DF8004E9B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E02159629654DF8004E9B1E /* LaunchScreen.storyboard */; };
 		7E0215A02965532A004E9B1E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E02159F2965532A004E9B1E /* DetailViewController.swift */; };
+		7E0215A2296556DB004E9B1E /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0215A1296556DB004E9B1E /* MyTabBarController.swift */; };
+		7E0215A4296556EC004E9B1E /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0215A3296556EC004E9B1E /* AnotherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7E02159729654DF8004E9B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E02159929654DF8004E9B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E02159F2965532A004E9B1E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7E0215A1296556DB004E9B1E /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		7E0215A3296556EC004E9B1E /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				7E02159629654DF8004E9B1E /* LaunchScreen.storyboard */,
 				7E02159929654DF8004E9B1E /* Info.plist */,
 				7E02159F2965532A004E9B1E /* DetailViewController.swift */,
+				7E0215A1296556DB004E9B1E /* MyTabBarController.swift */,
+				7E0215A3296556EC004E9B1E /* AnotherViewController.swift */,
 			);
 			path = DeclarativeUI;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			files = (
 				7E02159029654DF7004E9B1E /* ViewController.swift in Sources */,
 				7E02158C29654DF7004E9B1E /* AppDelegate.swift in Sources */,
+				7E0215A4296556EC004E9B1E /* AnotherViewController.swift in Sources */,
 				7E02158E29654DF7004E9B1E /* SceneDelegate.swift in Sources */,
+				7E0215A2296556DB004E9B1E /* MyTabBarController.swift in Sources */,
 				7E0215A02965532A004E9B1E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
