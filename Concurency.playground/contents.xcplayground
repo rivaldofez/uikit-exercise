@@ -3,5 +3,7 @@
     <pages>
         <page name='Completion Block'/>
         <page name='Untitled Page'/>
+        <page name='Delegate'/>
+        <page name='Block Operation &amp; Queue'/>
     </pages>
 </playground>
