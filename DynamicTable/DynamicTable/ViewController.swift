@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         
         academyTableView.register(UINib(nibName: "AcademyTableViewCell", bundle: nil), forCellReuseIdentifier: "AcademyCell")
     }
+    @IBAction func goToWebsite(_ sender: Any) {
+        let urlDicoding = "https://www.dicoding.com"
+          if let url = URL(string: urlDicoding), UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+          }
+    }
 }
 
 extension ViewController: UITableViewDataSource {
