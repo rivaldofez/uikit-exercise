@@ -5,11 +5,49 @@
 //  Created by Rivaldo Fernandes on 04/01/23.
 //
 
-import Foundation
+import UIKit
+
+enum DownloadState {
+    case new, downloaded, failed
+}
+
+class ImageDownloader: Operation {
+  private let movie: Movie
+ 
+  init(movie: Movie) {
+    self.movie = movie
+  }
+    
+    
+    override func main() {
+        if isCancelled {
+            return
+        }
+        
+        guard let imageData = try? Data(contentsOf: self.movie.poster) else { return }
+        
+        if isCancelled {
+            return
+        }
+        
+        if !imageData.isEmpty {
+            self.movie.image = UIImage(data: imageData)
+            self.movie.state = .downloaded
+        }else{
+            self.movie.image = nil
+            self.movie.state = .failed
+        }
+    }
+}
+
 
 class Movie {
     let title: String
     let poster: URL
+    
+    var image: UIImage?
+    var state: DownloadState = .new
+    
     
     init(title: String, poster: URL) {
         self.title = title
