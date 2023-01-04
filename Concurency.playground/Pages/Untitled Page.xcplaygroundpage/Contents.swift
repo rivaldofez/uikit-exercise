@@ -1,9 +1,9 @@
 import UIKit
 
 enum Color: String {
-    case red = "red"
-    case blue = "blue"
-    case green = "green"
+case red = "red"
+case blue = "blue"
+case green = "green"
 }
 
 let count = 5
@@ -66,15 +66,15 @@ workItem.notify(queue: DispatchQueue.main) {
 
 
 func task1(dispatchGroup: DispatchGroup) {
-   let queue = DispatchQueue(label: "com.dicoding.dispatchgroup.task1")
- 
-   queue.async {
+    let queue = DispatchQueue(label: "com.dicoding.dispatchgroup.task1")
+    
+    queue.async {
         sleep(1)
         print("Task 1 executed")
         dispatchGroup.leave()
     }
 }
- 
+
 func task2(dispatchGroup: DispatchGroup) {
     DispatchQueue.global().async {
         sleep(2)
@@ -82,7 +82,7 @@ func task2(dispatchGroup: DispatchGroup) {
         dispatchGroup.leave()
     }
 }
- 
+
 func task3(dispatchGroup: DispatchGroup) {
     DispatchQueue.main.async {
         print("Task 3 executed")
@@ -100,5 +100,25 @@ dispatchGroup.enter()
 task3(dispatchGroup: dispatchGroup)
 
 dispatchGroup.notify(queue: DispatchQueue.main) {
-   print("All task finished")
+    print("All task finished")
+}
+
+
+func expensiveTask(data: String, completion: @escaping (String) -> Void) {
+    let queue = DispatchQueue(label: "com.dicoding.completionblock")
+    
+    queue.async {
+        print("Processing: \(data)")
+        sleep(2) // Imitate expensive task
+        completion("Processing \(data) finished")
+    }
+}
+
+let mainQueue = DispatchQueue(label: "com.dicoding.main", qos: .userInteractive)
+mainQueue.async {
+    expensiveTask(data: "Get User") { result in
+        print(result)
+    }
+    
+    print("Main Queue Run")
 }
