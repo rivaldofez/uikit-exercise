@@ -13,6 +13,16 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .green
+        
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(backButton))
+        
+        self.navigationItem.leftBarButtonItem = backButton
+    }
+    
+    @objc func backButton() -> Void {
+        dismiss(animated: true, completion: nil)
     }
     
 
