@@ -40,6 +40,17 @@ class ImageDownloader: Operation {
     }
 }
 
+class PendingOperations {
+    lazy var downloadInProgress: [IndexPath: Operation] = [:]
+    
+    lazy var downloadQueue: OperationQueue = {
+        var queue = OperationQueue()
+        queue.name = "com.rivaldofez.imagedownload"
+        queue.maxConcurrentOperationCount = 2
+        return queue
+        
+    }()
+}
 
 class Movie {
     let title: String
