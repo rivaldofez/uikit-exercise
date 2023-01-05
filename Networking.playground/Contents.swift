@@ -8,3 +8,18 @@ func isNetworkReachable(with flags: SCNetworkReachabilityFlags) -> Bool {
     let canConnectWithoutUserInteraction = canConnectAutomatically && !flags.contains(.interventionRequired)
     return isReachable && (!needsConnection || canConnectWithoutUserInteraction)
 }
+
+let reachability = SCNetworkReachabilityCreateWithName(nil, "www.dicoding.com")
+
+var flags = SCNetworkReachabilityFlags()
+SCNetworkReachabilityGetFlags(reachability!, &flags)
+
+if !isNetworkReachable(with: flags) {
+    print("Device doesn't have internet connection")
+} else {
+    print("Host www.dicoding.com is reachable")
+}
+
+if flags.contains(.isWWAN) {
+    print("Device is using mobile data")
+}
