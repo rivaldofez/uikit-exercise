@@ -26,7 +26,25 @@ struct MovieResponse: Codable {
     let genres: [Int]
     let voteAverage: Double
     let overview: String
-    let releaseDate: String
+    let releaseDate: Date
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let path = try container.decode(String.self, forKey: .posterPath)
+        posterPath = "https://image.tmdb.org/t/p/w300\(path)"
+        
+        let dateString = try container.decode(String.self, forKey: .releaseDate)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        releaseDate = dateFormatter.date(from: dateString)!
+        
+        popularity = try container.decode(Double.self, forKey: .popularity)
+        title = try container.decode(String.self, forKey: .title)
+        genres = try container.decode([Int].self, forKey: .genres)
+        voteAverage = try container.decode(Double.self, forKey: .voteAverage)
+        overview = try container.decode(String.self, forKey: .overview)
+    }
     
     enum CodingKeys: String, CodingKey {
         case popularity
