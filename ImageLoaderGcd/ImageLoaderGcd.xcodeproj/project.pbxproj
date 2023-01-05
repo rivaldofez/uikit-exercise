@@ -16,6 +16,7 @@
 		7E0215C92965BD5A004E9B1E /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0215C72965BD5A004E9B1E /* MovieTableViewCell.swift */; };
 		7E0215CA2965BD5A004E9B1E /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0215C82965BD5A004E9B1E /* MovieTableViewCell.xib */; };
 		7E0215CC2965C1AC004E9B1E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0215CB2965C1AC004E9B1E /* MovieModel.swift */; };
+		7E0A234B2966BB5400F6327D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A234A2966BB5400F6327D /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7E0215C72965BD5A004E9B1E /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		7E0215C82965BD5A004E9B1E /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		7E0215CB2965C1AC004E9B1E /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		7E0A234A2966BB5400F6327D /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				7E0215C72965BD5A004E9B1E /* MovieTableViewCell.swift */,
 				7E0215C82965BD5A004E9B1E /* MovieTableViewCell.xib */,
 				7E0215CB2965C1AC004E9B1E /* MovieModel.swift */,
+				7E0A234A2966BB5400F6327D /* ImageDownloader.swift */,
 			);
 			path = ImageLoaderGcd;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				7E0215B22965B950004E9B1E /* AppDelegate.swift in Sources */,
 				7E0215CC2965C1AC004E9B1E /* MovieModel.swift in Sources */,
 				7E0215C92965BD5A004E9B1E /* MovieTableViewCell.swift in Sources */,
+				7E0A234B2966BB5400F6327D /* ImageDownloader.swift in Sources */,
 				7E0215B42965B950004E9B1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
