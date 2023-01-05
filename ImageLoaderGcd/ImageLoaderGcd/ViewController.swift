@@ -11,8 +11,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var movieTableView: UITableView!
     
-    private let pendingOperations = PendingOperations()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,34 +19,6 @@ class ViewController: UIViewController {
         movieTableView.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "movieTableViewCell")
     }
     
-    
-    fileprivate func startOperations(movie: Movie, indexPath: IndexPath){
-        if movie.state == .new {
-            startDownload(movie: movie, indexPath: indexPath)
-        }
-    }
-    
-    fileprivate func startDownload(movie: Movie, indexPath: IndexPath){
-        guard pendingOperations.downloadInProgress[indexPath] == nil else { return }
-        
-        let downloader = ImageDownloader(movie: movie)
-        
-        downloader.completionBlock = {
-            if downloader.isCancelled { return }
-            
-            DispatchQueue.main.async {
-                self.pendingOperations.downloadInProgress.removeValue(forKey: indexPath)
-                self.movieTableView.reloadRows(at: [indexPath], with: .automatic)
-            }
-        }
-        
-        pendingOperations.downloadInProgress[indexPath] = downloader
-        pendingOperations.downloadQueue.addOperation(downloader)
-    }
-    
-    fileprivate func toggleSuspendOperations(isSuspended: Bool){
-        pendingOperations.downloadQueue.isSuspended = isSuspended
-    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -60,13 +30,13 @@ extension ViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "movieTableViewCell", for: indexPath) as? MovieTableViewCell {
             let movie = movies[indexPath.row]
             cell.movieTitle.text = movie.title
-            
             cell.movieImage.image = movie.image
             
             if movie.state == .new {
                 cell.indicatorLoading.isHidden = false
                 cell.indicatorLoading.startAnimating()
-                startOperations(movie: movie, indexPath: indexPath)
+                startDownload(movie: movie, indexPath: indexPath)
+                
             }else{
                 cell.indicatorLoading.stopAnimating()
                 cell.indicatorLoading.isHidden = true
@@ -78,14 +48,22 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
     }
-}
-
-extension ViewController: UIScrollViewDelegate {
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        toggleSuspendOperations(isSuspended: true)
-    }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        toggleSuspendOperations(isSuspended: false)
+    fileprivate func startDownload(movie: Movie, indexPath: IndexPath){
+        let imageDownloader = ImageDownloader()
+        if movie.state == .new{
+            Task {
+                do {
+                    let image = try await imageDownloader.downloadImage(url: movie.poster)
+                    movie.state = .downloaded
+                    movie.image = image
+                    
+                    self.movieTableView.reloadRows(at: [indexPath], with: .automatic)
+                } catch {
+                    movie.state = .failed
+                    movie.image = nil
+                }
+            }
+        }
     }
 }
