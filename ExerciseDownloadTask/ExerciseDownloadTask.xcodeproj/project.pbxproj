@@ -14,7 +14,6 @@
 		7E0A23822966D85000F6327D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0A23812966D85000F6327D /* Assets.xcassets */; };
 		7E0A23852966D85000F6327D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0A23832966D85000F6327D /* LaunchScreen.storyboard */; };
 		7E0A238D2966D86800F6327D /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A238C2966D86800F6327D /* DownloadManager.swift */; };
-		7E5B506329682A700058D057 /* All Night - The Influence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B506229682A700058D057 /* All Night - The Influence.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		7E0A23842966D85000F6327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0A23862966D85000F6327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E0A238C2966D86800F6327D /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
-		7E5B506229682A700058D057 /* All Night - The Influence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "All Night - The Influence.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 		7E0A23772966D84F00F6327D /* ExerciseDownloadTask */ = {
 			isa = PBXGroup;
 			children = (
-				7E5B506129682A100058D057 /* SupportingFiles */,
 				7E0A23782966D84F00F6327D /* AppDelegate.swift */,
 				7E0A237A2966D84F00F6327D /* SceneDelegate.swift */,
 				7E0A237C2966D84F00F6327D /* ViewController.swift */,
@@ -71,14 +68,6 @@
 				7E0A23862966D85000F6327D /* Info.plist */,
 			);
 			path = ExerciseDownloadTask;
-			sourceTree = "<group>";
-		};
-		7E5B506129682A100058D057 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				7E5B506229682A700058D057 /* All Night - The Influence.mp3 */,
-			);
-			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E0A23852966D85000F6327D /* LaunchScreen.storyboard in Resources */,
-				7E5B506329682A700058D057 /* All Night - The Influence.mp3 in Resources */,
 				7E0A23822966D85000F6327D /* Assets.xcassets in Resources */,
 				7E0A23802966D84F00F6327D /* Main.storyboard in Resources */,
 			);
