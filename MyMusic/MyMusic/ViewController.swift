@@ -15,6 +15,12 @@ class ViewController: UIViewController {
     
     private var player: AVAudioPlayer?
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        isPlaying(state: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,8 +29,6 @@ class ViewController: UIViewController {
         guard let url = Bundle.main.url(forResource: "All Night - The Influence", withExtension: "mp3") else {
             print("url error")
             return
-            
-            
         }
         
         do {
@@ -46,6 +50,7 @@ class ViewController: UIViewController {
         print("audio played")
         guard let audioPlayer = player else { return }
         audioPlayer.play()
+        isPlaying(state: true)
         
         
     }
@@ -54,6 +59,12 @@ class ViewController: UIViewController {
         print("audio played")
         guard let audioPlayer = player else { return }
         audioPlayer.stop()
+        isPlaying(state: false)
+    }
+    
+    private func isPlaying(state: Bool){
+        stopButton.isEnabled = state
+        playButton.isEnabled = !state
     }
     
 }
