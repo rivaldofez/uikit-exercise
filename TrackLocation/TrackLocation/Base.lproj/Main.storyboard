@@ -23,6 +23,9 @@
                             </mapView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8C-FM-y0q">
                                 <rect key="frame" x="16" y="75" width="51" height="31"/>
+                                <connections>
+                                    <action selector="trackSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cch-w5-E3g"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -36,6 +39,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="72b-cU-KGG" secondAttribute="bottom" id="zTM-Bu-3Re"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="72b-cU-KGG" id="zVs-1B-IQH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
