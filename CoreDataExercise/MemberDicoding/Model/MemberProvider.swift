@@ -191,10 +191,19 @@ class MemberProvider {
         }
     }
     
-    
-    
-    
-    
-    
-    
+    func deleteMember(_ id: Int, completion: @escaping() -> Void) {
+        let taskContext = newTaskContext()
+        taskContext.perform {
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Member")
+            fetchRequest.fetchLimit = 1
+            fetchRequest.predicate = NSPredicate(format: "id == \(id)")
+            let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+            batchDeleteRequest.resultType = .resultTypeCount
+            if let batchDeleteResult = try? taskContext.execute(batchDeleteRequest) as? NSBatchDeleteResult {
+                if batchDeleteResult.result != nil {
+                    completion()
+                }
+            }
+        }
+    }
 }
