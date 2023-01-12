@@ -14,6 +14,7 @@
 		7EFE8FC629706B8800798BD4 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE8FC529706B8800798BD4 /* MovieModel.swift */; };
 		7EFE8FC829706BBE00798BD4 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE8FC729706BBE00798BD4 /* MovieResponse.swift */; };
 		7EFE8FCA29706C0A00798BD4 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE8FC929706C0A00798BD4 /* NetworkServices.swift */; };
+		7EFE8FCC29706C6F00798BD4 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE8FCB29706C6F00798BD4 /* MovieItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		7EFE8FC529706B8800798BD4 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		7EFE8FC729706BBE00798BD4 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		7EFE8FC929706C0A00798BD4 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		7EFE8FCB29706C6F00798BD4 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				7EFE8FC929706C0A00798BD4 /* NetworkServices.swift */,
 				7EFE8FBB29706B6300798BD4 /* Assets.xcassets */,
 				7EFE8FBD29706B6300798BD4 /* Preview Content */,
+				7EFE8FCB29706C6F00798BD4 /* MovieItemView.swift */,
 			);
 			path = SwiftUIComparison;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFE8FCC29706C6F00798BD4 /* MovieItemView.swift in Sources */,
 				7EFE8FCA29706C0A00798BD4 /* NetworkServices.swift in Sources */,
 				7EFE8FC629706B8800798BD4 /* MovieModel.swift in Sources */,
 				7EFE8FC829706BBE00798BD4 /* MovieResponse.swift in Sources */,

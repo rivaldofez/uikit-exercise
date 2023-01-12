@@ -73,3 +73,4 @@ let movies = [
         overview: "",
         posterPath: URL(string: "https://image.tmdb.org/t/p/w500/kPzQtr5LTheO0mBodIeAXHgthYX.jpg")!
     )
+]
