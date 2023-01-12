@@ -20,6 +20,7 @@
 		2A832B0324A44C2800653321 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A832B0224A44C2700653321 /* MemberModel.swift */; };
 		2A832B2F24A57EB500653321 /* MemberDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A832B2E24A57EB500653321 /* MemberDummy.swift */; };
 		2ACD11BD260C3C760098E33E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD11BC260C3C760098E33E /* .swiftlint.yml */; };
+		7E7CF3D6297025010091F31C /* MemberDicoding.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E7CF3D4297025010091F31C /* MemberDicoding.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2A832B0224A44C2700653321 /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
 		2A832B2E24A57EB500653321 /* MemberDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDummy.swift; sourceTree = "<group>"; };
 		2ACD11BC260C3C760098E33E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		7E7CF3D5297025010091F31C /* MemberDicoding.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemberDicoding.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				2A832AE824A30B9200653321 /* View */,
 				2A832ADA24A2E9F400653321 /* Assets.xcassets */,
 				2A832ADF24A2E9F400653321 /* Info.plist */,
+				7E7CF3D4297025010091F31C /* MemberDicoding.xcdatamodeld */,
 			);
 			path = MemberDicoding;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				2A832AFA24A330CE00653321 /* MemberProvider.swift in Sources */,
 				2A832AD624A2E9EF00653321 /* ListMemberViewController.swift in Sources */,
 				2A832AD224A2E9EF00653321 /* AppDelegate.swift in Sources */,
+				7E7CF3D6297025010091F31C /* MemberDicoding.xcdatamodeld in Sources */,
 				2A832AD424A2E9EF00653321 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +426,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E7CF3D4297025010091F31C /* MemberDicoding.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E7CF3D5297025010091F31C /* MemberDicoding.xcdatamodel */,
+			);
+			currentVersion = 7E7CF3D5297025010091F31C /* MemberDicoding.xcdatamodel */;
+			path = MemberDicoding.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2A832AC624A2E9EF00653321 /* Project object */;
 }
