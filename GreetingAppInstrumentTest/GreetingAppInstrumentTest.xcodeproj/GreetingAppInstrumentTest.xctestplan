@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "A8448525-8089-4BF8-BA60-E026290B2615",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:GreetingAppInstrumentTest.xcodeproj",
+      "identifier" : "7EDBB5292971AA410092C24F",
+      "name" : "GreetingAppInstrumentTest"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:GreetingAppInstrumentTest.xcodeproj",
+        "identifier" : "7EDBB5442971ADBA0092C24F",
+        "name" : "GreetingAppInstrumentTestUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

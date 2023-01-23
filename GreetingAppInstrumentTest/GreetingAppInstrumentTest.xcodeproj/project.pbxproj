@@ -39,6 +39,8 @@
 		7EDBB5452971ADBA0092C24F /* GreetingAppInstrumentTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreetingAppInstrumentTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDBB5472971ADBA0092C24F /* GreetingAppInstrumentTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingAppInstrumentTestUITests.swift; sourceTree = "<group>"; };
 		7EDBB5492971ADBA0092C24F /* GreetingAppInstrumentTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingAppInstrumentTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EDBB5502971B1F30092C24F /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		7EDBB5512971B24B0092C24F /* GreetingAppInstrumentTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = GreetingAppInstrumentTest.xctestplan; path = GreetingAppInstrumentTest.xcodeproj/GreetingAppInstrumentTest.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,8 @@
 		7EDBB5212971AA410092C24F = {
 			isa = PBXGroup;
 			children = (
+				7EDBB5512971B24B0092C24F /* GreetingAppInstrumentTest.xctestplan */,
+				7EDBB5502971B1F30092C24F /* TestPlan.xctestplan */,
 				7EDBB52C2971AA410092C24F /* GreetingAppInstrumentTest */,
 				7EDBB5462971ADBA0092C24F /* GreetingAppInstrumentTestUITests */,
 				7EDBB52B2971AA410092C24F /* Products */,
