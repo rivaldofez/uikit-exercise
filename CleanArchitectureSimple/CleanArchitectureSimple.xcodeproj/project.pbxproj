@@ -23,7 +23,7 @@
 		7EC7496A29801B24004892BE /* MessagePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496929801B24004892BE /* MessagePresenterProtocol.swift */; };
 		7EC7496C29801B56004892BE /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496B29801B56004892BE /* MessagePresenter.swift */; };
 		7EC7496F29801BCD004892BE /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496E29801BCD004892BE /* Injection.swift */; };
-		7EC749792980205A004892BE /* CleanArchitectureSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC749782980205A004892BE /* CleanArchitectureSimpleTests.swift */; };
+		7EC74981298020AC004892BE /* MessageUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC74980298020AC004892BE /* MessageUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		7EC7496B29801B56004892BE /* MessagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePresenter.swift; sourceTree = "<group>"; };
 		7EC7496E29801BCD004892BE /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 		7EC749762980205A004892BE /* CleanArchitectureSimpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureSimpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EC749782980205A004892BE /* CleanArchitectureSimpleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureSimpleTests.swift; sourceTree = "<group>"; };
+		7EC74980298020AC004892BE /* MessageUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,9 +170,17 @@
 		7EC749772980205A004892BE /* CleanArchitectureSimpleTests */ = {
 			isa = PBXGroup;
 			children = (
-				7EC749782980205A004892BE /* CleanArchitectureSimpleTests.swift */,
+				7EC7497F29802080004892BE /* Domain */,
 			);
 			path = CleanArchitectureSimpleTests;
+			sourceTree = "<group>";
+		};
+		7EC7497F29802080004892BE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7EC74980298020AC004892BE /* MessageUseCaseTests.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EC749792980205A004892BE /* CleanArchitectureSimpleTests.swift in Sources */,
+				7EC74981298020AC004892BE /* MessageUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
