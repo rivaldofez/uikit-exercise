@@ -82,7 +82,6 @@
 				7EC749582980168C004892BE /* Data */,
 				7EC7494429801665004892BE /* AppDelegate.swift */,
 				7EC7494629801665004892BE /* SceneDelegate.swift */,
-				7EC7494829801665004892BE /* ViewController.swift */,
 				7EC7494A29801665004892BE /* Main.storyboard */,
 				7EC7494D29801666004892BE /* Assets.xcassets */,
 				7EC7494F29801666004892BE /* LaunchScreen.storyboard */,
@@ -115,6 +114,7 @@
 		7EC7495A2980169C004892BE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7EC7494829801665004892BE /* ViewController.swift */,
 				7EC7496929801B24004892BE /* MessagePresenterProtocol.swift */,
 				7EC7496B29801B56004892BE /* MessagePresenter.swift */,
 			);
