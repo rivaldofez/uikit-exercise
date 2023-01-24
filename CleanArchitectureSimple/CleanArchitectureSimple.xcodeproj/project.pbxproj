@@ -17,6 +17,9 @@
 		7EC7495E29801796004892BE /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7495D29801796004892BE /* MessageDataSource.swift */; };
 		7EC7496029801846004892BE /* MessageRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7495F29801846004892BE /* MessageRepositoryProtocol.swift */; };
 		7EC74962298018BC004892BE /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC74961298018BC004892BE /* MessageRepository.swift */; };
+		7EC749642980193D004892BE /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC749632980193D004892BE /* MessageEntity.swift */; };
+		7EC7496629801960004892BE /* MessageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496529801960004892BE /* MessageUseCase.swift */; };
+		7EC7496829801A67004892BE /* MessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496729801A67004892BE /* MessageInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		7EC7495D29801796004892BE /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		7EC7495F29801846004892BE /* MessageRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepositoryProtocol.swift; sourceTree = "<group>"; };
 		7EC74961298018BC004892BE /* MessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
+		7EC749632980193D004892BE /* MessageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
+		7EC7496529801960004892BE /* MessageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageUseCase.swift; sourceTree = "<group>"; };
+		7EC7496729801A67004892BE /* MessageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 		7EC7495929801692004892BE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				7EC749632980193D004892BE /* MessageEntity.swift */,
+				7EC7496529801960004892BE /* MessageUseCase.swift */,
+				7EC7496729801A67004892BE /* MessageInteractor.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -174,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC7496829801A67004892BE /* MessageInteractor.swift in Sources */,
+				7EC749642980193D004892BE /* MessageEntity.swift in Sources */,
 				7EC7495C29801704004892BE /* MessageDataSourceProtocol.swift in Sources */,
+				7EC7496629801960004892BE /* MessageUseCase.swift in Sources */,
 				7EC7496029801846004892BE /* MessageRepositoryProtocol.swift in Sources */,
 				7EC7494929801665004892BE /* ViewController.swift in Sources */,
 				7EC7494529801665004892BE /* AppDelegate.swift in Sources */,
