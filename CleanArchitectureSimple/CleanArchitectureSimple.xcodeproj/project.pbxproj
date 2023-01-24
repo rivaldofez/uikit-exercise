@@ -13,6 +13,10 @@
 		7EC7494C29801665004892BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC7494A29801665004892BE /* Main.storyboard */; };
 		7EC7494E29801666004892BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC7494D29801666004892BE /* Assets.xcassets */; };
 		7EC7495129801666004892BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC7494F29801666004892BE /* LaunchScreen.storyboard */; };
+		7EC7495C29801704004892BE /* MessageDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7495B29801704004892BE /* MessageDataSourceProtocol.swift */; };
+		7EC7495E29801796004892BE /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7495D29801796004892BE /* MessageDataSource.swift */; };
+		7EC7496029801846004892BE /* MessageRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7495F29801846004892BE /* MessageRepositoryProtocol.swift */; };
+		7EC74962298018BC004892BE /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC74961298018BC004892BE /* MessageRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7EC7494D29801666004892BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EC7495029801666004892BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EC7495229801666004892BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EC7495B29801704004892BE /* MessageDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSourceProtocol.swift; sourceTree = "<group>"; };
+		7EC7495D29801796004892BE /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
+		7EC7495F29801846004892BE /* MessageRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepositoryProtocol.swift; sourceTree = "<group>"; };
+		7EC74961298018BC004892BE /* MessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		7EC7494329801665004892BE /* CleanArchitectureSimple */ = {
 			isa = PBXGroup;
 			children = (
+				7EC7495A2980169C004892BE /* Presentation */,
+				7EC7495929801692004892BE /* Domain */,
+				7EC749582980168C004892BE /* Data */,
 				7EC7494429801665004892BE /* AppDelegate.swift */,
 				7EC7494629801665004892BE /* SceneDelegate.swift */,
 				7EC7494829801665004892BE /* ViewController.swift */,
@@ -65,6 +76,31 @@
 				7EC7495229801666004892BE /* Info.plist */,
 			);
 			path = CleanArchitectureSimple;
+			sourceTree = "<group>";
+		};
+		7EC749582980168C004892BE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7EC7495B29801704004892BE /* MessageDataSourceProtocol.swift */,
+				7EC7495D29801796004892BE /* MessageDataSource.swift */,
+				7EC7495F29801846004892BE /* MessageRepositoryProtocol.swift */,
+				7EC74961298018BC004892BE /* MessageRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7EC7495929801692004892BE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7EC7495A2980169C004892BE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC7495C29801704004892BE /* MessageDataSourceProtocol.swift in Sources */,
+				7EC7496029801846004892BE /* MessageRepositoryProtocol.swift in Sources */,
 				7EC7494929801665004892BE /* ViewController.swift in Sources */,
 				7EC7494529801665004892BE /* AppDelegate.swift in Sources */,
+				7EC74962298018BC004892BE /* MessageRepository.swift in Sources */,
 				7EC7494729801665004892BE /* SceneDelegate.swift in Sources */,
+				7EC7495E29801796004892BE /* MessageDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
