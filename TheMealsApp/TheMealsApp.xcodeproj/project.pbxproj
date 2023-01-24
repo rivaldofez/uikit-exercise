@@ -29,6 +29,10 @@
 		2A9D4570292C8604008FABEB /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9D456F292C8604008FABEB /* DetailPresenter.swift */; };
 		2A9D4572292C8620008FABEB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9D4571292C8620008FABEB /* DetailView.swift */; };
 		7E9AC3A6297FCE1A00763B8F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9AC3A5297FCE1A00763B8F /* Alamofire */; };
+		7E9AC3A9297FD1F400763B8F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9AC3A8297FD1F400763B8F /* Realm */; };
+		7E9AC3AB297FD1F400763B8F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9AC3AA297FD1F400763B8F /* RealmSwift */; };
+		7E9AC3AF297FD2D800763B8F /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AC3AE297FD2D800763B8F /* CategoryEntity.swift */; };
+		7E9AC3B1297FD2E700763B8F /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AC3B0297FD2E700763B8F /* LocaleDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,8 @@
 		2A9D456B292C8577008FABEB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		2A9D456F292C8604008FABEB /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		2A9D4571292C8620008FABEB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7E9AC3AE297FD2D800763B8F /* CategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
+		7E9AC3B0297FD2E700763B8F /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9AC3AB297FD1F400763B8F /* RealmSwift in Frameworks */,
+				7E9AC3A9297FD1F400763B8F /* Realm in Frameworks */,
 				7E9AC3A6297FCE1A00763B8F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +163,7 @@
 		2A9D4541292C8118008FABEB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7E9AC3AC297FD2B400763B8F /* Locale */,
 				2A9D4545292C8144008FABEB /* Remote */,
 				2A9D454B292C819A008FABEB /* MealRepository.swift */,
 			);
@@ -288,6 +297,23 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		7E9AC3AC297FD2B400763B8F /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				7E9AC3AD297FD2BB00763B8F /* Entity */,
+				7E9AC3B0297FD2E700763B8F /* LocaleDataSource.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		7E9AC3AD297FD2BB00763B8F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7E9AC3AE297FD2D800763B8F /* CategoryEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +333,8 @@
 			name = TheMealsApp;
 			packageProductDependencies = (
 				7E9AC3A5297FCE1A00763B8F /* Alamofire */,
+				7E9AC3A8297FD1F400763B8F /* Realm */,
+				7E9AC3AA297FD1F400763B8F /* RealmSwift */,
 			);
 			productName = TheMealsApp;
 			productReference = 2A9D452B292C805D008FABEB /* TheMealsApp.app */;
@@ -338,6 +366,7 @@
 			mainGroup = 2A9D4522292C805D008FABEB;
 			packageReferences = (
 				7E9AC3A4297FCE1A00763B8F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7E9AC3A7297FD1F400763B8F /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 2A9D452C292C805D008FABEB /* Products */;
 			projectDirPath = "";
@@ -385,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9AC3B1297FD2E700763B8F /* LocaleDataSource.swift in Sources */,
 				2A9D454A292C817B008FABEB /* RemoteDataSource.swift in Sources */,
 				2A9D4531292C805D008FABEB /* ContentView.swift in Sources */,
 				2A9D456A292C84C2008FABEB /* CategoryRow.swift in Sources */,
@@ -399,6 +429,7 @@
 				2A9D4570292C8604008FABEB /* DetailPresenter.swift in Sources */,
 				2A9D454E292C81B1008FABEB /* Injection.swift in Sources */,
 				2A9D455F292C828E008FABEB /* CustomeError+Ext.swift in Sources */,
+				7E9AC3AF297FD2D800763B8F /* CategoryEntity.swift in Sources */,
 				2A9D4551292C81DD008FABEB /* CategoryModel.swift in Sources */,
 				2A9D455D292C8272008FABEB /* CategoryMapper.swift in Sources */,
 				2A9D454C292C819A008FABEB /* MealRepository.swift in Sources */,
@@ -612,6 +643,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		7E9AC3A7297FD1F400763B8F /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -619,6 +658,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7E9AC3A4297FCE1A00763B8F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		7E9AC3A8297FD1F400763B8F /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E9AC3A7297FD1F400763B8F /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		7E9AC3AA297FD1F400763B8F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E9AC3A7297FD1F400763B8F /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
