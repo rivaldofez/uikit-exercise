@@ -22,6 +22,7 @@
 		7EC7496829801A67004892BE /* MessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496729801A67004892BE /* MessageInteractor.swift */; };
 		7EC7496A29801B24004892BE /* MessagePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496929801B24004892BE /* MessagePresenterProtocol.swift */; };
 		7EC7496C29801B56004892BE /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496B29801B56004892BE /* MessagePresenter.swift */; };
+		7EC7496F29801BCD004892BE /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7496E29801BCD004892BE /* Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7EC7496729801A67004892BE /* MessageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInteractor.swift; sourceTree = "<group>"; };
 		7EC7496929801B24004892BE /* MessagePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePresenterProtocol.swift; sourceTree = "<group>"; };
 		7EC7496B29801B56004892BE /* MessagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePresenter.swift; sourceTree = "<group>"; };
+		7EC7496E29801BCD004892BE /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		7EC7494329801665004892BE /* CleanArchitectureSimple */ = {
 			isa = PBXGroup;
 			children = (
+				7EC7496D29801BAD004892BE /* Dependency Injection */,
 				7EC7495A2980169C004892BE /* Presentation */,
 				7EC7495929801692004892BE /* Domain */,
 				7EC749582980168C004892BE /* Data */,
@@ -116,6 +119,14 @@
 				7EC7496B29801B56004892BE /* MessagePresenter.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7EC7496D29801BAD004892BE /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				7EC7496E29801BCD004892BE /* Injection.swift */,
+			);
+			path = "Dependency Injection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC7496F29801BCD004892BE /* Injection.swift in Sources */,
 				7EC7496A29801B24004892BE /* MessagePresenterProtocol.swift in Sources */,
 				7EC7496829801A67004892BE /* MessageInteractor.swift in Sources */,
 				7EC749642980193D004892BE /* MessageEntity.swift in Sources */,
