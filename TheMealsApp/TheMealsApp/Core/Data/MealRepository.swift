@@ -6,6 +6,7 @@
 //
 
 import RxSwift
+import Foundation
 
 protocol MealRepositoryProtocol {
     func getCategories() -> Observable<[CategoryModel]>
